@@ -39,13 +39,13 @@ invoked below:
 
 // your code here
 function countDownTimer(n) {
-  if (n === 0) "Happy New Year!";
+  if (n === 0) return "Happy New Year!";
   const countdown = () => {
     n -= 1;
     if (n === 0) {
       return "Happy New Year!"
     }
-    else {return countdown} //this takes us out of the countdown function
+    else { return countdown } //this takes us out of the countdown function
   }
   return countdown //returns a function
 }
